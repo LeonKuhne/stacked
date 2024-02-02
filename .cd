@@ -1,0 +1,13 @@
+#!/bin/bash
+
+help .cd | indent 
+
+function run() {
+  . ~/envs/ai/bin/activate
+  python3 src
+}
+
+function gen() {
+  . ~/envs/ai/bin/activate
+  python3 src/audio.py
+}
